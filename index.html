@@ -16,6 +16,13 @@
 				font-family: sans-serif;
 			}
 			
+			.limpar::after{
+				content: '';
+				clear: both;
+				box-sizing: border-box;
+				display: block;
+			}
+			
 			header{
 				background-color: rgba(0, 0, 0, 0.85);
 			}
@@ -50,16 +57,18 @@
 			
 			.principal{
 				background-color: #9c9d9a;
-				height: 30vh;
+/*				height: 30vh;*/
 				width: 100wv;
 				padding: 20px;
+/*				overflow: auto;*/
 			}
 			
 			.principal-content{
-/*				border: 1px solid black;*/
-				width: 40%;
-				float: left;
-				height: 100%;
+				border: 1px solid black;
+				width: 100%;
+				margin: auto;
+				text-align: center;
+/*				float: left;*/
 			}
 			
 			.principal-content h1{
@@ -71,27 +80,57 @@
 			}
 			.principal-image{
 				float: left;
-				height: 100%;
+				height: 100px;
 				border: 1px solid black;
-				width: 55%;
-				margin-left: 1.1em;
+				width: 100%;
 			}
 			
 			
 			.medio{
-				background-color: blanchedalmond;
-				height: 30vh;
-				padding: 20px;
+				background-color: #958c7e;
+				padding: 21px;
+				
 			}
 			
 			.medio article{
+/*
 				float: left;
 				border: 1px solid black;
-				height: 100%;
-				width: 32%;
-				margin-left: 5px;
 				box-sizing: border-box;
+				width: 100%;
+				text-align: center;
+				height: 30px;
+*/
+				display: none;	
 			}
+
+			.medio-info{
+				background-color: #9c9d9a;
+				padding: 20px;
+			}
+			
+			.final{
+				background-color: #958c7e;;
+				padding: 20px;
+			}
+			
+			.final p{
+				text-align: center;
+				font-weight: 700;
+			}
+			
+			.projectos article{
+				height: 20vh; 
+				border: 1px solid black;
+				width: 75%;
+				margin:  15px auto;
+			}
+			
+			footer{
+				height: 30vh;
+				background-color: rgba(0, 0, 0, 0.85);
+			}
+			
 		</style>
 		
 		
@@ -111,29 +150,35 @@
 			</header>
 	
 		<main>
-			<section class='principal'>
+			<section class='principal limpar'>
 				<article class='principal-content'><h1>Olá, eu sou <br> Alberto Kiowa Massanza </h1>
 				<p>Desenvolvedor front-end júnior</p>	
 				</article>
 				<article class='principal-image'></article>
 			</section>
 			
-			<section class='medio'>
-				<article>Foto</article>
-				<article>Animação</article>
-				<article>Experiência</article>
+			<section class='medio limpar'>
+				<h1>Experiência</h1>
+				<p>Eu sou estudante universitário, nunca trabalhei em uma empresa, sou iniciante de programação frontend e este é o meu primeiro projecto.
+				Estou procurando uma oportunidade para estagiar e conseguir desenvolver as minhas habilidades.
+				Comecei a estudar programação em 2019 e com certeza serei programador a vida inteira, portanto preciso de uma equipe para auxiliar</p>
+				<article class='medio1'>Foto</article>
+				<article class='medio2'>Animação</article>
+				<article class='medio3'>Experiência</article>
 				
 			</section>
 			
 			<section class='medio-info'>
 				<h2>Sobre mim</h2>
-				<article class='info'></article>
+				<article class='info'><p>Eu sou estudante universitário, nunca trabalhei em uma empresa, sou iniciante de programação frontend e este é o meu primeiro projecto.
+				Estou procurando uma oportunidade para estagiar e conseguir desenvolver as minhas habilidades.
+				Comecei a estudar programação em 2019 e com certeza serei programador a vida inteira, portanto preciso de uma equipe para auxiliar</p> </article>
 				
 			</section>
 			
-			<section class='final'>
-				<h3>Dê um click e observe os meus projectos</h3>
-				
+			<section class='final limpar'>
+				<h2>Meus Projectos</h2>
+				<p>Dê um click e observe os meus projectos</p>
 				<div class='projectos'>
 					<article></article>
 					<article></article>
@@ -144,6 +189,10 @@
 		</main>
 	
 		<footer>
+			<section>Nome completo: Alberto Kiowa Massanza
+				     Redes Sociais: Alberto Brian
+			</section>
+			
 		</footer>
 		
 		</body>
