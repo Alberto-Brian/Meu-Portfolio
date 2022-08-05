@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <title> Meu portfólio </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <meta name="author" content="Alberto Brian">
+        <meta name="description" content="portfólio HMTL, CSS e JavaScript">
+		
+		
+		<style>
+		
+			body{
+				margin: 0;
+				padding: 0;
+				font-family: sans-serif;
+			}
+			
+			header{
+				background-color: rgba(0, 0, 0, 0.85);
+			}
+			
+			nav ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			nav ul li{
+/*				display: inline-block;*/
+				text-align: center;
+				border: 1px solid white;
+/*				padding: 5px;*/
+			}
+
+			nav ul li a{
+				text-decoration: none;
+				color: white;
+				font-weight: 600;
+				display: block;
+				margin: 0;
+				padding: 5px;
+				cursor: pointer;
+				transition: background .3s linear;
+			}
+			
+			nav ul li a:hover{
+				background-color: rgba(255, 255, 255, 0.44);
+			}
+			
+			.principal{
+				background-color: #9c9d9a;
+				height: 30vh;
+				width: 100wv;
+				padding: 20px;
+			}
+			
+			.principal-content{
+/*				border: 1px solid black;*/
+				width: 40%;
+				float: left;
+				height: 100%;
+			}
+			
+			.principal-content h1{
+				font-family: cursive;
+			}
+			
+			.principal-content p{
+				font-family: tahoma, sans-serif;
+			}
+			.principal-image{
+				float: left;
+				height: 100%;
+				border: 1px solid black;
+				width: 55%;
+				margin-left: 1.1em;
+			}
+			
+			
+			.medio{
+				background-color: blanchedalmond;
+				height: 30vh;
+				padding: 20px;
+			}
+			
+			.medio article{
+				float: left;
+				border: 1px solid black;
+				height: 100%;
+				width: 32%;
+				margin-left: 5px;
+				box-sizing: border-box;
+			}
+		</style>
+		
+		
+     </head>
+	
+		<body>
+	
+			<header>
+				<nav>
+				 	<ul>
+					    <li><a href='#'>Home</a></li>
+					    <li><a href='#'>Sobre</a></li>
+					    <li><a href='#'>Experiência</a></li>
+					    <li><a href='#'>Projectos</a></li>
+					</ul>
+				</nav>
+			</header>
+	
+		<main>
+			<section class='principal'>
+				<article class='principal-content'><h1>Olá, eu sou <br> Alberto Kiowa Massanza </h1>
+				<p>Desenvolvedor front-end júnior</p>	
+				</article>
+				<article class='principal-image'></article>
+			</section>
+			
+			<section class='medio'>
+				<article>Foto</article>
+				<article>Animação</article>
+				<article>Experiência</article>
+				
+			</section>
+			
+			<section class='medio-info'>
+				<h2>Sobre mim</h2>
+				<article class='info'></article>
+				
+			</section>
+			
+			<section class='final'>
+				<h3>Dê um click e observe os meus projectos</h3>
+				
+				<div class='projectos'>
+					<article></article>
+					<article></article>
+					<article></article>
+					<article></article>
+				</div>
+			</section>
+		</main>
+	
+		<footer>
+		</footer>
+		
+		</body>
+		
+</html>
