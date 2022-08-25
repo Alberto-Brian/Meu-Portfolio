@@ -1,6 +1,7 @@
 function Menu(config){
 	this.nav = document.querySelector(config.container);
 	this.btn = document.querySelector(config.button);
+	this.opcao = document.querySelectorAll(config.lis);
 	
 	var _aberto = false;
 	var _this = this;
@@ -21,7 +22,7 @@ function AbriFecha(){
 
 function Abrir(){
 	var _top = _this.nav.getBoundingClientRect().top + 'px'; ////////////////////////
-	console.log(_this.nav.getBoundingClientRect().top);
+//	console.log(_this.nav.getBoundingClientRect().top);
 	var _style = { maxHeight: 'calc(100vh - '+ _top +')', overflow: 'auto'}
 	
 	AplicarEstilo(_style);
@@ -43,4 +44,10 @@ function Fechar(){
 	_aberto = false;
 }
 	
+//  for(var i = 0; i <= this.opcao.length; i++ ){
+//	  var lista = this.opcao[i]; 
+//	  lista.addEventListener('click', function(e){
+//		  Fechar();
+//	  })
+//  }	
 }

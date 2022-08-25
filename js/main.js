@@ -42,21 +42,41 @@
  
 	
 	//Função menu com um objecto como parâmetro
-	Menu({
+  	Menu({
 	container: '.header__nav',
-	button: '.button-menu'	
+	button: '.button-menu',
+	lis : '.header__nav ul li'
 	})
 	
 	//Habilidades
-	Skillfulls({
+//	Skillfulls({
+//	   h_html: '.h_html',
+//	   h_css: '.h_css',
+//	   h_javascript: '.h_javascript',
+//	   h_java: '.h_java',
+//	   h_c: '.h_c',
+//	   h_logica: '.h_logica',
+//	   paragrafo: '.paragrafo',
+//	   infoVazio: '.info i'	
+//		
+//	})
+//	
+	
+	Skillfull({
 	   h_html: '.h_html',
 	   h_css: '.h_css',
 	   h_javascript: '.h_javascript',
 	   h_java: '.h_java',
 	   h_c: '.h_c',
 	   h_logica: '.h_logica',
-	   paragrafo: '.paragrafo',
-	   infoVazio: '.info i'	
+	   
+	  	l_habilidades: '.l_habilidades',
+	  	l_html: '.l_html',
+	  	l_css: '.l_css',
+	  	l_javascript: '.l_javascript',
+	  	l_java: '.l_java',
+	  	l_c: '.l_c',
+	  	l_github: '.l_github',	
 		
 	})
 	
@@ -70,6 +90,11 @@
 		final: '.final'
 	})
 	
+	
+	//Moeda de habilidades 
+	Moeda({
+		moeda: '#moeda'
+	})
 	
 //	document.addEventListener('scroll', function(e){
 //		console.log('Y: ',pageYOffset);
