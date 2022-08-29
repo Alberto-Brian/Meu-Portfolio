@@ -84,6 +84,7 @@
 	//Opacidade ao rolar a tela
 	
 	Opacity({
+		main: 'home',
 		principal: '.principal',
 		medio: '.medio',
 		medio_info: '.medio-info',
@@ -97,10 +98,10 @@
 	})
 	
 //	document.addEventListener('scroll', function(e){
-//		console.log('Y: ',pageYOffset);
-//		console.log('X: ',innerWidth);
+//		console.log('Y: ', pageYOffset);
+//		console.log('innerWidth: ', innerWidth);
 //	})
-//	
+	
 	
 	//Botão sobre do menu
 		

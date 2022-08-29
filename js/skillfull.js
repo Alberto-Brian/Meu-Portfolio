@@ -29,6 +29,8 @@ function Skillfull(skill){
 	
 	function MostrarTexto(habilidade){
 		
+		if(innerWidth > 978 ){
+		
 		habilidade.addEventListener('mouseenter', function(e){
 		 
 		_this.l_habilidades.style.display = 'none';	
@@ -42,17 +44,19 @@ function Skillfull(skill){
 	
 	habilidade.addEventListener('mouseleave', DevolverTextoOriginal);
 	
-	function DevolverTextoOriginal()
-		{
-		_this.l_habilidades.style.display = 'block';
-		_this.l_html.style.display = 'none';
-		_this.l_c.style.display = 'none';
-		_this.l_java.style.display = 'none';
-		_this.l_javascript.style.display = 'none';
-		_this.l_css.style.display = 'none';
-		_this.l_githbu.style.display = 'none';
-			
-	}
+			function DevolverTextoOriginal()
+				{
+				_this.l_habilidades.style.display = 'block';
+				_this.l_html.style.display = 'none';
+				_this.l_c.style.display = 'none';
+				_this.l_java.style.display = 'none';
+				_this.l_javascript.style.display = 'none';
+				_this.l_css.style.display = 'none';
+				_this.l_githbu.style.display = 'none';
+
+			}
 	
+		}
+		
 	}
 }

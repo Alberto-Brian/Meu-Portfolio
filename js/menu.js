@@ -44,10 +44,10 @@ function Fechar(){
 	_aberto = false;
 }
 	
-//  for(var i = 0; i <= this.opcao.length; i++ ){
-//	  var lista = this.opcao[i]; 
-//	  lista.addEventListener('click', function(e){
-//		  Fechar();
-//	  })
-//  }	
+  for(var i = 0; i < _this.opcao.length; i++ ){
+ 		_this.opcao[i].addEventListener('click', function(e){
+		  Fechar();
+	  })
+	  
+  }	
 }
