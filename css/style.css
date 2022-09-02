@@ -1,3 +1,9 @@
+
+html{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
 body{
 	margin: 0;
 	padding: 0;
@@ -19,6 +25,7 @@ body{
 	background-color: white;
 	display: inline-block;
 	padding: 5px 40px;
+	height: inherit;
 	color: aqua;
 	font-size: 20px;
 	font-weight: 900;
@@ -106,7 +113,7 @@ nav ul li a:hover{
 	font-family: tahoma, sans-serif;
 }
 .principal-image{
-/*	float: left;*/
+/*	float: left
 	margin-top: 20px;
 	height: 100px;
 /*	border: 1px solid black;*/
@@ -130,7 +137,7 @@ nav ul li a:hover{
 	height: 100%;
 	width: 38%;
 	float: right;
-	margin: auto;
+	margin: 0 0 0 6px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -146,8 +153,8 @@ nav ul li a:hover{
 	border: 2px solid white; 
 	border-radius: 7px;
 	padding: 3px 8px;
-	width: 100px;
-	margin: 10px auto;
+	width: 5em;
+	margin: 10px 0 10px 30px ;
 	color: white;
 	transition: all .3s linear;
 }
@@ -204,9 +211,8 @@ nav ul li a:hover{
 }
 
 .projectos{
-	height: 447px;
+	height: 29.125em;
 	overflow: hidden;
-	transition: all .2s linear;
 }
 .projectos article{
 	height: 20vh; 
@@ -214,44 +220,55 @@ nav ul li a:hover{
 	width: 75%;
 	margin:  15px auto;
 	border-radius: 10px;
+	transition: all .2s linear;
 }
 
-.js .button_vermais{
-	display: block;
-	margin: auto;
-	background-color: rgba(255, 255, 255, 0.53);
-	padding: 6px 20px;
-	border-radius: 9px;	
-	transition: all .3s linear;
-}
-.button_vermais{
-	display: none;
-}
-
-.button_vermais:hover{
-	background-color: rgba(255, 255, 255, 0.86);
-	letter-spacing: 1px;
+.projectos article:hover{
+	background-color: rgba(0, 0, 0, 0.4);
 	cursor: pointer;
 }
 
+.projectando{
+		background: rgba(11, 11, 11, 0.14);
+	}
+	
+	.projectando:after{
+		content: 'Brevemente...';
+		display: block;
+		margin-top: 30%;
+		color: white;
+		letter-spacing: 2px;
+		font-family: cursive;
+	}
+
+.js .button_vermais{
+	display: block;
+	width: 100vw;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.94);
+	padding: 3px 20px;	
+	transition: all .3s linear;
+	color: white;
+}
+
 footer{
-	height: 23vh;
+	height: 15vh;
 	background-color: rgba(0, 0, 0, 0.85);
 }
 
 .foot-imagens{
-	border: 1px solid white;
-	height: 8em;
-/*	width: 49px;*/
+/*	border: 1px solid white;*/
+/*	height: 4em;*/
+	width: 6em;
 	float: right;
-	margin: 30px;
-	transform: translateY(-6em);
+	margin-top: 30px;
 }
 
 .foot-imagens article{
-	width: 39px;
-	height: 30px;
-	margin: 0 30px;
+	width: 2em;
+	height: 2em;
+	margin: 6px;
+	float: right;
 }
 
 
@@ -268,10 +285,10 @@ adress{
 	font-weight: 400;
 	color: #9bb2b2;
 /*	border: 1px solid white;*/
+/*	width: 15em;*/
 	float: left;
-	width: 550px;
 	padding: 15px 0 0 15px;
-	font-size: .9em;
+	font-size: .8em;
 	
 }
 
@@ -287,38 +304,72 @@ adress{
 /********************************************************************************/
 
 
-
-
-
-
+@media screen and (max-width:340px){
+	
+	.logotipo{
+		height: inherit;
+	}
+	.principal-image div:first-child{
+		margin-left: 1em;
+		clear:both;
+	}
+	.principal-image div:last-child{
+		margin-top: 10px;
+		width: 100%;
+		height: 35%;
+		flex-direction: row;
+		clear: both;
+	}
+	.principal .button{
+		margin: 0 10px 0;
+	}
+	
+	
+	.foot-imagens{
+	width: 3em;
+	height: 5em;
+	margin: 0;
+}
+	
+	adress{
+	font-size: .6em;
+	
+}
+	
+	
+}
 
 
 @media screen and (min-width: 32.125em /*514px*/){
 	.principal-image img{
 	margin-left: 3.5em;
 }
-/*
-	.js .projectos{
-		height: 320px ;
-		max-height: 500px;
+	.final{
+/*		height: 25.125em ;	*/
 	}
-*/
+	 .projectos{
+		height: 21.5em;
+		width: 440px;
+		margin: auto;
+	}
 	.projectos article:nth-child(3){
 		margin-bottom: 400px;
 		background: white;
 	}
 	.projectos article{
-	height: 20vh; 
+/*	height: 20vh; */
+	height: 100px; 
 	border: 1px solid black;
-	width: 47%;
+	width: 200px;
 	margin: 5px;
 	border-radius: 10px;
 	float: left;
 	}
 	
-	.projectos a{
-		clear:both;
+	.js .button_vermais{
+		display: none;
 	}
+
 }
 
 @media screen and (min-width: 45.625em /*730px*  " MIN TABLET"*/){
@@ -377,17 +428,22 @@ adress{
 	margin-left: 6.5em;
     }
 	
+	
+	.final{
+/*		height: 39em;*/
+	}
 	.projectos{
-		width: 80%;
+		width: 100%;
 		margin: auto;
+		height: 22.5em;
 /*		border: 1px solid white;*/
 	}
 	
 	.projectos article{
-	height: 25vh; 
+	height: 15vh; 
 	border: 1px solid black;
-	width: 46%;
-	margin: 9px;	
+	width: 28%;
+	margin: 15px;	
 	border-radius: 10px;	
 }
 }
@@ -456,10 +512,10 @@ adress{
 
 	.medio{
 		width: 50%;
-		height: 55%;
+		height: 40%;
 		position: absolute;
-		bottom: -4em;
-/*		top: 5em;*/
+/*		bottom: -8em;*/
+		top: 20em;
 		left: 22em;
 	}
 	
@@ -474,12 +530,14 @@ adress{
 }
 
 	.final{
+		height: 33em;
 		text-align: center;
 		background-color: #9c9d9a;
 	}
 	.projectos{
 		width: 80%;
 		margin: auto;
+		height: 24em;
 	}
 	
 	
@@ -585,7 +643,7 @@ adress{
 	
 	.medio{
 		width: 50%;
-		height: 50%;
+		height: 36%;
 		position: absolute;
 		top: 25em;
 		left: 27em;
@@ -658,8 +716,13 @@ adress{
 	font-size: .7em;
 }
 
-	.projectos{
-		height: 11em;
+	.final{
+		height: 30em;
+	}
+	.projectos article{
+		height: 8.5em;
+		margin: 11px;
+/*		width: 5em;*/
 	}
 	
 	.foot-imagens{
@@ -684,6 +747,7 @@ adress{
 }
 	adress p{
 		margin: 0;
+		font-size: 1.5em;
 	}
 	
 	
@@ -703,7 +767,7 @@ adress{
 
 	
 	header nav ul{
-		left: 54%;
+		left: 52%;
 	}
 	.principal, .medio{
 /*		opacity: 0;*/
@@ -763,60 +827,30 @@ adress{
 	}
 	
 	.medio-info{
-		height: 500px;
+		display: block;
+/*		height: 500px;*/
 		background-color: transparent;
 		padding: 50px 0;
 		transition: all .5s linear;
 	}
 
 	.medio-info article{
-	width: 46%;	
+	width: 100%;	
 /*	border: 1px solid black;*/
 	height: 80%;
-	float: left;
+/*	float: left;*/
 	}
 	
-	.info2{
-		position: relative;
+	.info1{
+		margin: auto;
+	}
+	
+	.info1 div{
+
 	}
 	
 	.info2 div{
 		transition: all 1s linear;
-	}
-	
-	@keyframes roda{
-		from {
-			height: 16%;
-		}
-		
-		to{
-			height: 0%;
-/*			border-radius: 40%;*/
-		}
-	}
-	
-	#moeda{
-		width: 10%;
-		height: 20%;
-		background-image: url('../Imagens/javascript.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-/*		margin: auto;*/
-		border-radius: 50%;
-		transition: all .4s linear;
-		opacity: .5;
-		
-		animation-name: roda;
-		animation-direction: alternate;
-		animation-duration: 1s;
-		animation-iteration-count: infinite;
-		
-		
-		position: absolute;
-		left: 83%;
-		bottom: 2em;
-
 	}
 	
 	 .final{
@@ -885,6 +919,75 @@ adress{
 	header nav ul{
 		left: 62%;
 	}
+	
+	@keyframes roda{
+		from {
+			height: 16%;
+		}
+		
+		to{
+			height: 0%;
+/*			border-radius: 40%;*/
+		}
+	}
+	
+	
+	.info2{
+		position: relative;
+	}
+	#moeda{
+		width: 10%;
+		height: 20%;
+		background-image: url('../Imagens/javascript.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+/*		margin: auto;*/
+		border-radius: 50%;
+		transition: all .4s linear;
+		opacity: .5;
+		
+		animation-name: roda;
+		animation-direction: alternate;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		
+		
+		position: absolute;
+		left: 83%;
+		bottom: 2em;
+
+	}
+	
+	.medio-info{
+		display: block;
+		height: 500px;
+		background-color: transparent;
+		padding: 50px 0;
+		transition: all .5s linear;
+	}
+
+	.medio-info article{
+	width: 40%;	
+/*	border: 1px solid black;*/
+	height: 80%;
+	float: left;
+	}
+	
+	.info1 div{
+
+	}
+	
+	.projectos{
+		width: 60%;
+	}
+	.projectos article{
+		width: 210px;
+		height: 150px;
+		margin: 20px;
+	}
+	
+	
 }
 
 

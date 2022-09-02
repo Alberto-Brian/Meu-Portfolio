@@ -9,38 +9,6 @@
 	var abertoSimNao = false;
 	
 	
-	
-//	$button_vermais.style.display = 'block';
-	$button_vermais.addEventListener('click', abriFecha);
-	
-	function abriFecha(){
-				if(!abertoSimNao){
-					$box_projectos.style.height = 880 +'px'; //900
-					abertoSimNao = true;
-					$button_vermais.textContent = 'Ver menos';
-				} else{
-					$box_projectos.style.height = 440  +'px'; //459
-					abertoSimNao = false;
-					$button_vermais.textContent = 'Ver mais';
-				}
-			}
- 
-	
-	 window.addEventListener('resize', function(){
-
-			if(innerWidth > 517){
-//					console.log('resize disparado');
-					$button_vermais.style.display = 'none';
-					$box_projectos.style.height = 'inherit';		
-			} else{
-					$button_vermais.style.display = 'block';
-					$box_projectos.style.height = 440 +'px';
-			}
-	 });
-
- 
- 
-	
 	//Função menu com um objecto como parâmetro
   	Menu({
 	container: '.header__nav',
@@ -109,5 +77,33 @@
 		$button_sobre.addEventListener('click', function(e){
 			scrollTo(0, 217);
 		});
+	
+	
+	
+	//	$button_vermais.style.display = 'block';
+	$button_vermais.addEventListener('click', abriFecha);
+	
+	function abriFecha(){
+				if(!abertoSimNao){
+					$box_projectos.style.height = 57.125 +'em'; //900
+					abertoSimNao = true;
+					$button_vermais.textContent = 'Ver menos';
+				} else{
+					$box_projectos.style.height = 29  +'em'; //459
+					abertoSimNao = false;
+					$button_vermais.textContent = 'Ver mais';
+				}
+			}
+	
+	 window.addEventListener('resize', function(){
+
+			if(innerWidth <= 513){
+					$button_vermais.style.display = 'block';
+			} else{
+					$button_vermais.style.display = 'none';
+			}
+//		 console.log('Tamanho: ', innerWidth);
+	 });
+	
 	
 })()
