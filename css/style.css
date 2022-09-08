@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
 html{
 	margin: 0;
 	padding: 0;
@@ -7,11 +8,15 @@ html{
 body{
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
 	overflow: hidden auto;
 /*	background-color: rgb(123, 123, 123);*/
 	background-color: rgba(18, 15, 15, 0.26);
+}
+h1{
+	font-size: 600;
+	font-weight: 900;
 }
 
 .limpar::after{
@@ -20,6 +25,7 @@ body{
 	box-sizing: border-box;
 	display: block;
 }
+
 
 .logotipo{
 	background-color: white;
@@ -297,6 +303,9 @@ adress{
 	}
 
 
+abbr{
+	text-decoration: none;
+}
 
 
 
@@ -688,20 +697,6 @@ adress{
 		height: 23em;
 	}
 
-	.info .dominio-imagem{
-		border: 2px solid black;
-/*		float: left;
-*/
-		height: 100%;
-		margin: 20px;
-		border-radius: 10px;
-		transition: all .3s linear;
-		
-	}
-	
-	.info .dominio-imagem:hover{
-		transform: scale(1.3, 1.3);
-	}
 	
 	.final{
 /*		height: 400px;*/
@@ -792,10 +787,7 @@ adress{
 		opacity: 1;
 	}
 	
-	.info .dominio-imagem:hover{
-		transform: scale(1.16, 1.3);
-	}
-	
+/*
 	.info .dominio-imagem img{
 		padding: 20px 14px 14px;
 		height: 90%;
@@ -803,6 +795,7 @@ adress{
 		box-sizing: border-box;
 		border-radius: 10px;
 	}
+*/
 	
 	
 	.info a{
@@ -823,7 +816,6 @@ adress{
 		background-image: linear-gradient( #6f6f6f 30%,rgb(123, 123, 123) 60%, rgba(212, 209, 209, 0.79));
 		
 		color:rgb(21, 17, 17);
-		font-family: tahoma;
 	}
 	
 	.medio-info{
@@ -891,6 +883,7 @@ adress{
 }
 
 	.foot-imagens{
+		margin-right: 110px;
 		width: 30%;
 		height: 0;
 	}
@@ -904,6 +897,7 @@ adress{
 
 
 adress{
+	margin-left: 70px;
 	font-weight: 400;
 	color: #9bb2b2;
 /*	border: 1px solid white;*/
@@ -987,6 +981,92 @@ adress{
 		margin: 20px;
 	}
 	
+	
+	.info .dominio-imagem{
+		border: 2px solid black;
+/*		float: left;
+*/
+		height: 100%;
+		margin: 20px;
+		border-radius: 10px;
+		transition: all .3s linear;
+		
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	
+	.info .dominio-imagem:hover{
+		transform: scale(1.1, 1.1);
+		cursor: pointer;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+
+	/*ANIMAÇÃO HABILIDADES*/
+	
+/*HTML*/
+.h_html{
+	background-image: url(../Imagens/HTMLL.png);
+}
+
+.h_html:hover{
+	background-image: url(../Imagens/htmlll.png);	
+}
+	
+/*CSS*/
+.h_css{
+	background-image: url(../Imagens/CSS%20-%20Copia.png);
+}
+
+.h_css:hover{
+	background-image: url(../Imagens/CSS.png);	
+}
+
+/*JAVASCRIPT*/
+.h_js{
+	background-image: url(../Imagens/JAVASCRIPT%20.png);
+}
+
+.h_js:hover{
+	background-image: url(../Imagens/JAVASCRIPT-.png);	
+}
+
+/*JAVA*/
+.h_java{
+	background-image: url(../Imagens/java-preto.png);
+	background-color: black;
+}
+
+.h_java:hover{
+	background-image: url(../Imagens/java-branco.jpg);	
+	background-color: white;
+}
+
+/*C*/
+.h_c{
+	background-image: url(../Imagens/letter_c_PNG22%20-%20Copia.jpg);
+	background-color: black;
+}
+
+.h_c:hover{
+	background-image: url(../Imagens/letter_c_PNG22.png);
+	background-color: white;
+}
+
+/*GITHUB*/
+.h_git{
+	background-image: url(../Imagens/git-preto.png);
+	background-color: black;
+}
+
+.h_git:hover{
+	background-image: url(../Imagens/git-branco.png);	
+	background-color: white;
+}
+
 	
 }
 

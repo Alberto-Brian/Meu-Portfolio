@@ -33,10 +33,10 @@
 	Skillfull({
 	   h_html: '.h_html',
 	   h_css: '.h_css',
-	   h_javascript: '.h_javascript',
+	   h_javascript: '.h_js',
 	   h_java: '.h_java',
 	   h_c: '.h_c',
-	   h_logica: '.h_logica',
+	   h_logica: '.h_git',
 	   
 	  	l_habilidades: '.l_habilidades',
 	  	l_html: '.l_html',
