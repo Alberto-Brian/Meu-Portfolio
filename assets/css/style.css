@@ -217,7 +217,7 @@ nav ul li a:hover{
 }
 
 .projectos{
-	height: 29.125em;
+	height: 27em; /*29.125*/
 	overflow: hidden;
 }
 .projectos article{
@@ -313,7 +313,7 @@ abbr{
 /********************************************************************************/
 
 
-@media screen and (max-width:340px){
+@media screen and (max-width:400px){
 	
 	.logotipo{
 		height: inherit;
@@ -449,7 +449,7 @@ abbr{
 	}
 	
 	.projectos article{
-	height: 15vh; 
+	height: 22vh; 
 	border: 1px solid black;
 	width: 28%;
 	margin: 15px;	
@@ -716,7 +716,7 @@ abbr{
 	}
 	.projectos article{
 		height: 8.5em;
-		margin: 11px;
+		margin: 9px;
 /*		width: 5em;*/
 	}
 	
@@ -753,6 +753,95 @@ abbr{
 	.now .no-opacity{
 		opacity: 0;
 	}
+	
+	
+	
+	
+	.info .dominio-imagem{
+		border: 2px solid black;
+/*		float: left;
+*/
+		height: 100%;
+		margin: 20px;
+		border-radius: 10px;
+		transition: all .3s linear;
+		
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	
+	.info .dominio-imagem:hover{
+		transform: scale(1.1, 1.1);
+		cursor: pointer;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+
+	/*ANIMAÇÃO HABILIDADES*/
+	
+/*HTML*/
+.h_html{
+	background-image: url(../Imagens/HTMLL.png);
+}
+
+.h_html:hover{
+	background-image: url(../Imagens/htmlll.png);	
+}
+	
+/*CSS*/
+.h_css{
+	background-image: url(../Imagens/CSS%20-%20Copia.png);
+}
+
+.h_css:hover{
+	background-image: url(../Imagens/CSS.png);	
+}
+
+/*JAVASCRIPT*/
+.h_js{
+	background-image: url(../Imagens/JAVASCRIPT%20.png);
+}
+
+.h_js:hover{
+	background-image: url(../Imagens/JAVASCRIPT-.png);	
+}
+
+/*JAVA*/
+.h_java{
+	background-image: url(../Imagens/java-preto.png);
+	background-color: black;
+}
+
+.h_java:hover{
+	background-image: url(../Imagens/java-branco.jpg);	
+	background-color: white;
+}
+
+/*C*/
+.h_c{
+	background-image: url(../Imagens/letter_c_PNG22%20-%20Copia.jpg);
+	background-color: black;
+}
+
+.h_c:hover{
+	background-image: url(../Imagens/letter_c_PNG22.png);
+	background-color: white;
+}
+
+/*GITHUB*/
+.h_git{
+	background-image: url(../Imagens/git-preto.png);
+	background-color: black;
+}
+
+.h_git:hover{
+	background-image: url(../Imagens/git-branco.png);	
+	background-color: white;
+}
+
 	
 }
 
@@ -980,93 +1069,6 @@ adress{
 		height: 150px;
 		margin: 20px;
 	}
-	
-	
-	.info .dominio-imagem{
-		border: 2px solid black;
-/*		float: left;
-*/
-		height: 100%;
-		margin: 20px;
-		border-radius: 10px;
-		transition: all .3s linear;
-		
-		background-position: center;
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
-	
-	.info .dominio-imagem:hover{
-		transform: scale(1.1, 1.1);
-		cursor: pointer;
-		background-position: center;
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
-
-
-	/*ANIMAÇÃO HABILIDADES*/
-	
-/*HTML*/
-.h_html{
-	background-image: url(../Imagens/HTMLL.png);
-}
-
-.h_html:hover{
-	background-image: url(../Imagens/htmlll.png);	
-}
-	
-/*CSS*/
-.h_css{
-	background-image: url(../Imagens/CSS%20-%20Copia.png);
-}
-
-.h_css:hover{
-	background-image: url(../Imagens/CSS.png);	
-}
-
-/*JAVASCRIPT*/
-.h_js{
-	background-image: url(../Imagens/JAVASCRIPT%20.png);
-}
-
-.h_js:hover{
-	background-image: url(../Imagens/JAVASCRIPT-.png);	
-}
-
-/*JAVA*/
-.h_java{
-	background-image: url(../Imagens/java-preto.png);
-	background-color: black;
-}
-
-.h_java:hover{
-	background-image: url(../Imagens/java-branco.jpg);	
-	background-color: white;
-}
-
-/*C*/
-.h_c{
-	background-image: url(../Imagens/letter_c_PNG22%20-%20Copia.jpg);
-	background-color: black;
-}
-
-.h_c:hover{
-	background-image: url(../Imagens/letter_c_PNG22.png);
-	background-color: white;
-}
-
-/*GITHUB*/
-.h_git{
-	background-image: url(../Imagens/git-preto.png);
-	background-color: black;
-}
-
-.h_git:hover{
-	background-image: url(../Imagens/git-branco.png);	
-	background-color: white;
-}
-
 	
 }
 

@@ -85,11 +85,11 @@
 	
 	function abriFecha(){
 				if(!abertoSimNao){
-					$box_projectos.style.height = 57.125 +'em'; //900
+					$box_projectos.style.height = 54.125 +'em'; //900
 					abertoSimNao = true;
 					$button_vermais.textContent = 'Ver menos';
 				} else{
-					$box_projectos.style.height = 29  +'em'; //459
+					$box_projectos.style.height = 27+'em'; //459
 					abertoSimNao = false;
 					$button_vermais.textContent = 'Ver mais';
 				}
